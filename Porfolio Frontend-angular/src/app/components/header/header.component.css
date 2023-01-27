@@ -1,0 +1,40 @@
+#header-superior{
+    background-color:  midnightblue;
+    border-radius: 10px;
+}
+
+#ap-icon{
+    /* Especifica la altura */
+    height: 100px;
+    margin-left: 40px;}
+    
+    #linkedin-icon{
+        /* Especifica la altura */
+        
+        height: 40px;
+    }
+    
+    #red-social{
+        float: right;
+        margin-top: 30px;
+        margin-right: 40px;
+    }
+    
+    #github-icon{
+        height: 40px; 
+        margin-left: 5px;
+    }
+    
+    #header-inferior{
+        border-radius: 10px;
+    }
+
+    #banner{
+        /* Especifica la anchura */
+        width: 100%;
+        height: 30
+        350px;
+        border-radius: 10px;
+    }
+
+  
