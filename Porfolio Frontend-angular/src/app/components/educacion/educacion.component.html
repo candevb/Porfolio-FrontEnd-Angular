@@ -1,3 +1,40 @@
 <div class="container"  id="educacion">
-    <h3>Educación</h3>
+  <h3>Educación</h3>
+  <div class="col-lg-2" *ngFor="let educacion of educacionList">
+    <span>
+      <h6>{{educacion.titulo}}</h6>
+      <ul>
+        <li>{{educacion.institucion}}</li>
+        <li>{{"desde: " + educacion.inicio}}</li>
+        <li>{{"hasta: " + educacion.fin}}</li>
+      </ul>
+    </span>
+  <!--   <span>
+      <h6>{{educacion.titulo}}</h6>
+      <ul>
+        <li>{{educacion.institucion}}</li>
+        <li>{{"desde: " + educacion.inicio}}</li>
+        <li>{{"hasta: " + educacion.fin}}</li>
+      </ul>
+    </span> -->
   </div>
+  <button type="button" class="btn btn-info" routerLink="/nuevaedu">
+      Nueva Educación
+  </button>
+   
+    
+       <!--  <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td><h2>{{Educacion.titulo}}</h2></td>
+                    <td>{{Educacion.institucion}}</td>
+                    <td><button class="btn btn-primary" routerLink="/editexp/{{Educacion.id}}">
+                         <i class="bi bi-pencil-square"></i> EDITAR</button></td>
+                    <td><button class="btn btn-danger" (click)="delete(Educacion.id)">
+                        <i class="bi bi-pencil-square"></i> BORRAR</button></td>
+                </tr>
+            </tbody>
+    
+        </table> -->
+    </div>
+  

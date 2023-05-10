@@ -4,16 +4,26 @@
             <img src="../assets/img/can.jpg" id="foto-perfil" class="img-fluid" alt="foto perfil" >
         </div>
         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-            <p id="nombre-apellido">
-                Candelaria Vera Barros
-            </p>
-            <p>
-                Fullstack Developer Jr.
-            </p>
+            <span>
+                <h4>
+                    {{persona.nombre}} {{persona.apellido}}
+                </h4>
+                <h6>
+                    {{persona.acercaDe}}
+                </h6>
+            </span>
+          <!--   <ul>
+                <li>
+                    <h4><strong>{{persona.nombre}}</strong></h4>
+                </li>
+                <li>
+                    <h4><strong>{{persona.apellido}}</strong></h4>
+                </li>
+            </ul> -->
         </div>
         <div class="col-xs-12 col-sm-7 col-md-8 col-lg-7">
             <span>
-                <h3>Acerca de</h3>
+                <h5>Sobre mi:</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porttitor ultricies nisi at euismod. Nulla egestas efficitur ipsum, a aliquet erat finibus eu. Donec a magna ac lacus finibus malesuada. Sed placerat arcu vitae libero hendrerit ornare. Donec ut justo varius, mattis augue at, sagittis sapien. Phasellus eget luctus diam.</p>
             </span>
         </div>
