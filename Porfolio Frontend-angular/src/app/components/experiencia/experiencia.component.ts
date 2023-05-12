@@ -38,17 +38,17 @@ export class ExperienciaComponent implements OnInit{
 
 
   //-------------TODO------
-  /* modificar(id?: number){
-    if(id != undefined){
-      this.sExperiencia.modificar(id).subscribe(
+  modificar(experiencia: any){
+    if(experiencia != undefined){
+      this.sExperiencia.modificar(experiencia).subscribe(
         data => {
           this.verExperiencia();
         }, err =>{
-          alert("Experiencia no borrada");
+          alert("Experiencia no editada");
         }
       )
-    } */
+    }
   }
 
-
+}
 

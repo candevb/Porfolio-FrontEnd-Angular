@@ -9,6 +9,8 @@ import { Persona } from '../model/persona';
 })
 export class PersonaService {
   URL: string = 'http://localhost:8080/personas/';
+  //URL: string = 'https://portfolio-backend-g7nd.onrender.com/';
+  
   constructor(private httpClient: HttpClient) { }
 
   public getPersonas(): Observable<Persona>{

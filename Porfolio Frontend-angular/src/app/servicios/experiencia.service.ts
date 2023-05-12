@@ -25,7 +25,7 @@ export class ExperienciaService {
     return this.httpClient.delete<any>(this.URL + `delete/${id}`);
   } 
 
- /*  public modificar(id: number): Observable<any>{
-    return this.httpClient.modificar<any>(this.URL + `modificar/${id}`);
-  }  */
+  public modificar(experiencia: Experiencia): Observable<any>{
+    return this.httpClient.put<any>(this.URL + `modificar`, experiencia);
+  } 
 }

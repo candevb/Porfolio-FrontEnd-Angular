@@ -14,8 +14,8 @@
                     <li>{{"Hasta: " + experiencia.fin}}</li>
                     <button class="btn btn-outline-danger btn-sm" (click)="delete(experiencia.id)">
                         <i class="bi bi-pencil-square"></i>BORRAR</button>
-                    <!-- <button class="btn btn-outline-danger btn-sm" (click)="modificar(experiencia.id)">
-                            <i class="bi bi-pencil-square"></i>EDITAR</button> -->
+                    <button class="btn btn-outline-danger btn-sm" routerLink="/edit-experiencia/{{experiencia.id}}">
+                            <i class="bi bi-pencil-square"></i>EDITAR</button>
                   </ul>
                 </span>
             <div>
