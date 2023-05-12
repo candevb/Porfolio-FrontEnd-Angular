@@ -8,8 +8,8 @@ import { Observable } from 'rxjs';
 })
 export class SkillsService {
 
-  URL: string = 'http://localhost:8080/skills/';
-  //URL: string = 'https://portfolio-backend-g7nd.onrender.com/';
+  //URL: string = 'http://localhost:8080/skills/';
+ URL: string = 'https://portfolioweb-vk30.onrender.com';
 
   constructor(private httpClient: HttpClient) { }
 
