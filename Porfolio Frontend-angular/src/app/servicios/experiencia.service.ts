@@ -16,7 +16,16 @@ export class ExperienciaService {
     return this.httpClient.get<Experiencia[]>(this.URL + 'ver');
   }
 
- /*  public delete(id: number): Observable<any>{
+  public crear(experiencia: Experiencia): Observable<any>{
+    return this.httpClient.post<any>(this.URL + 'new', experiencia)
+  }
+
+
+ public delete(id: number): Observable<any>{
     return this.httpClient.delete<any>(this.URL + `delete/${id}`);
-  } */
+  } 
+
+ /*  public modificar(id: number): Observable<any>{
+    return this.httpClient.modificar<any>(this.URL + `modificar/${id}`);
+  }  */
 }

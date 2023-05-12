@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {ReactiveFormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
@@ -12,6 +14,10 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+
+
 ;
 
 
@@ -26,13 +32,19 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     ProyectosComponent,
     IniciarSesionComponent,
     PortfolioComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent,
+      
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    CommonModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

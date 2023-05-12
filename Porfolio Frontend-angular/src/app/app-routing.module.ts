@@ -5,6 +5,7 @@ import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesi
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { HardAndSoftSkillsComponent } from './components/hard-and-soft-skills/hard-and-soft-skills.component';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
 
 
 
@@ -14,6 +15,8 @@ const routes: Routes = [
   {path: 'iniciar-sesion', component:IniciarSesionComponent},
   {path: 'skills', component: HardAndSoftSkillsComponent},
   {path: 'experiencia', component: ExperienciaComponent},
+  {path: 'new-experiencia', component: NewExperienciaComponent},
+  //{path: 'edit-experiencia', component: ExperienciaComponent},
   {path:'', redirectTo: 'iniciar-sesion', pathMatch: 'full'}
 ];
 

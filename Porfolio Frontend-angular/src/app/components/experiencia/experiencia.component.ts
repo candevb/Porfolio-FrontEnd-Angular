@@ -19,10 +19,36 @@ export class ExperienciaComponent implements OnInit{
   }
 
   verExperiencia():void{
-    this.sExperiencia.ver().subscribe(data => {this.experienciaList = data;})
+    this.sExperiencia.ver().subscribe(data => {this.experienciaList = data;})   
     
     
   }
 
+  delete(id?: number){
+    if(id != undefined){
+      this.sExperiencia.delete(id).subscribe(
+        data => {
+          this.verExperiencia();
+        }, err =>{
+          alert("Experiencia no borrada");
+        }
+      )
+    }
+  }
 
-}
+
+  //-------------TODO------
+  /* modificar(id?: number){
+    if(id != undefined){
+      this.sExperiencia.modificar(id).subscribe(
+        data => {
+          this.verExperiencia();
+        }, err =>{
+          alert("Experiencia no borrada");
+        }
+      )
+    } */
+  }
+
+
+
