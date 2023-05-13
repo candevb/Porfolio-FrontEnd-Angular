@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class SkillsService {
 
   //URL: string = 'http://localhost:8080/skills/';
- URL: string = 'https://portfolioweb-vk30.onrender.com';
+ URL: string = 'https://portfolioweb-vk30.onrender.com/skills/';
 
   constructor(private httpClient: HttpClient) { }
 
