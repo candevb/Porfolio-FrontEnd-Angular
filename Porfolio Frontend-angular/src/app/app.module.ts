@@ -18,6 +18,7 @@ import { NewExperienciaComponent } from './components/experiencia/new-experienci
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 
 
+
 ;
 
 
@@ -34,6 +35,7 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
     PortfolioComponent,
     NewExperienciaComponent,
     EditExperienciaComponent,
+  
       
   
   ],
